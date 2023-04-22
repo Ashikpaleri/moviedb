@@ -19,10 +19,6 @@ class HomeDataBloc extends Bloc<HomeDataEvent, HomeDataState> {
       try{
         final response = await _homeProvider.getPosts(searchData: event.querydata);
         if(response !=null){
-          print("ddddddddd");
-          print(response.results!.first.title);
-          print("ffffffff");
-
           yield HomeDataLode(
             movieDetails: response
           );

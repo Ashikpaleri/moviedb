@@ -6,7 +6,6 @@ import 'package:machine_test/base_module/presentation/core/values/style.dart';
 import 'package:machine_test/home/home_module/data/model/home_results_model.dart';
 import 'package:machine_test/home/home_module/presentation/feature/bloc/home_bloc/home_data_bloc.dart';
 import 'package:machine_test/home/home_module/presentation/feature/component/home_list_tile.dart';
-import 'package:machine_test/home/home_module/presentation/feature/component/search_field.dart';
 import 'package:machine_test/home/home_module/presentation/feature/screen/movie_detaile_screen.dart';
 
 import '../component/custom_subpar_for_movie_tile.dart';

@@ -16,8 +16,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-   Future.delayed(Duration(seconds: 3),() =>        Navigator.pushReplacement(context,
-                 MaterialPageRoute(builder: (context) =>  HomeScreen())),
+   Future.delayed(const Duration(seconds: 3),() =>        Navigator.pushReplacement(context,
+                 MaterialPageRoute(builder: (context) =>  const HomeScreen())),
 
   );
     super.initState();
@@ -34,16 +34,16 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Container(
                 height: 200,
-                width: 250,
-                decoration: BoxDecoration(
+                width: 220,
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage(ThemeAssets.movie),fit: BoxFit.cover
                   )
                 ),
 
               ),
-              SizedBox(height: AppConstants.defaultPadding,),
-              Text("Movie DB",style: TextStyle(fontSize: 18,color: CommonColors.colorOrange,fontWeight: FontWeight.w600),)
+              const SizedBox(height: AppConstants.defaultPadding,),
+              const Text("Movie DB",style: TextStyle(fontSize: 18,color: CommonColors.colorOrange,fontWeight: FontWeight.w600),)
 
             ],
           ),

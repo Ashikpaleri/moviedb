@@ -75,8 +75,7 @@ class _HomeListTileState extends State<HomeListTile> {
     final data = _fav_data_box.keys.map((key) {
       final item = _fav_data_box.get(key);
 
-      print(item);
-      // print(item.);
+
       return {
         "key": key,
         "name": item["name"],
