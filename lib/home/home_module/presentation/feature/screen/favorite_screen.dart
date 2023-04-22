@@ -30,7 +30,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
 
 
   }
-  
+
 
   @override
   void initState() {
@@ -42,7 +42,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
     var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xffE5E5E5),
+        backgroundColor: const Color(0xffE5E5E5),
 
 
         body: SingleChildScrollView(
@@ -88,7 +88,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                       itemBuilder: (context, index){
                         final currentItem = _items[index];
                         return Padding(padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
                           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.white),
 
                           child: Column(
@@ -96,15 +96,15 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Movie : ${currentItem['name']}",style: Style.subheadingTwo),
-                              SizedBox(height: AppConstants.defaultPadding/2,),
+                              const SizedBox(height: AppConstants.defaultPadding/2,),
                               Text("Adults Only : ${currentItem['adult'].toString()}",style: Style.subheadingThree),
-                              SizedBox(height: AppConstants.defaultPadding/2,),
+                              const SizedBox(height: AppConstants.defaultPadding/2,),
 
                               Text("Popularity : ${currentItem['popularity']}",style: Style.subheadingThree),
-                              SizedBox(height: AppConstants.defaultPadding/2,),
+                              const SizedBox(height: AppConstants.defaultPadding/2,),
 
                               Text("Over View : ${currentItem['overView']}",style: Style.subheadingThree,maxLines: 3,overflow: TextOverflow.ellipsis),
-                              SizedBox(height: AppConstants.defaultPadding/2,),
+                              const SizedBox(height: AppConstants.defaultPadding/2,),
 
 
                             ],

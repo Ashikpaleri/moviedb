@@ -173,8 +173,8 @@ class _HomeListTileState extends State<HomeListTile> {
                           });
                         },
                         child: box.containsKey(widget.movieDetails!.id)
-                            ? Icon(Icons.favorite, color: Colors.red)
-                            : Icon(Icons.favorite_border),
+                            ? const Icon(Icons.favorite, color: Colors.red)
+                            : const Icon(Icons.favorite_border),
                         // child: Center(
                         //   child: isSelected == false
                         //       ? const Icon(Icons.favorite_border)

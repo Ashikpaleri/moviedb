@@ -9,7 +9,7 @@ class CustomContentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size =MediaQuery.of(context).size;
-    return Container(width: size.width,
+    return SizedBox(width: size.width,
       child: Row(
         children: [
           Text(name!),

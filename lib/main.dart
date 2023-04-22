@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:machine_test/home/home_module/presentation/feature/screen/home_screen.dart';
 import 'package:machine_test/home/home_module/presentation/feature/screen/splash_screen.dart';
 
 import 'home/home_module/presentation/feature/bloc/home_bloc/home_data_bloc.dart';

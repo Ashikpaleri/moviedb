@@ -58,7 +58,7 @@ getPlatform(){
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xffE5E5E5),
+        backgroundColor: const Color(0xffE5E5E5),
 
           floatingActionButton: FloatingActionButton(
             backgroundColor: CommonColors.colorOrange,
@@ -66,19 +66,19 @@ getPlatform(){
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             onPressed: () {
 
-                Navigator.push(context, MaterialPageRoute(builder: (context) => FavoriteScreen(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const FavoriteScreen(),));
             
             },
-            child:  Icon(Icons.favorite_border),
+            child:  const Icon(Icons.favorite_border),
           ),
           body: RefreshIndicator(
             onRefresh: (){
               getHomeData();
 
-              return Future.delayed(Duration(seconds: 0));
+              return Future.delayed(const Duration(seconds: 0));
             },
             child: SingleChildScrollView(
-              physics: AlwaysScrollableScrollPhysics(),
+              physics: const AlwaysScrollableScrollPhysics(),
 
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
@@ -119,7 +119,7 @@ getPlatform(){
                                       });
                                       getHomeData();
                                     },
-                                    child: Icon(Icons.clear)),
+                                    child: const Icon(Icons.clear)),
                                 // isDense: true,
                                 filled: true),
                             onChanged: (value) {
@@ -189,7 +189,7 @@ getPlatform(){
                       child: Container(
                         width: 150,
                         height: 180,
-                        child: Text("Some Error"),
+                        child: const Text("Some Error"),
                       ),
                     );
                   }
